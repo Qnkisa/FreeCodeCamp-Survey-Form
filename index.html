@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial Arts Servey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <img src="https://www.pexels.com/photo/man-kicking-heavy-bag-260447/" alt="">
+
+    <div class="survey-container">
+        <h1 id="title">Martial Arts Servey</h1>
+        <p id="description">Help us improve your experience with our website</p>
+        <form id="survey-form">
+            <div class="form-div">
+                <label for="name" id="name-label" class="big-label">What is your name?</label>
+                <input type="text" id="name" required placeholder="Full Name...">
+            </div>
+            <div class="form-div">
+                <label for="email" id="email-label" class="big-label">What is your email?</label>
+                <input type="email" id="email" required placeholder="Email...">
+            </div>
+            <div class="form-div">
+                <label for="number" id="number-label" class="big-label">What is your age?</label>
+                <input type="number" id="number" placeholder="Age..." min="18" max="100">
+            </div>
+            <div class="form-div">
+                <label for="dropdown" id="label-dropdown" class="big-label">What martial art do you do?</label>
+                <select name="martial art" id="dropdown">
+                    <option value="">---Choose martial art---</option>
+                    <option value="Boxing">Boxing</option>
+                    <option value="Kickboxing">Kickboxing</option>
+                    <option value="MMA">MMA</option>
+                    <option value="BJJ">BJJ</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-div">
+                <label class="big-label">What is your gender?</label>
+                <label class="radio-container">Male
+                    <input type="radio" name="gender" value="Male">
+                    <span class="radio-checkmark"></span>
+                </label>
+                <label class="radio-container">One
+                    <input type="radio" name="gender" value="Female">
+                    <span class="radio-checkmark"></span>
+                </label>
+            </div>
+            <div class="form-div">
+                <label class="big-label">What are some training benefits that you have seen?</label>
+                <label class="checkbox-container">Improved fitness
+                    <input type="checkbox" value="fitness">
+                    <span class="checkbox-checkmark"></span>
+                </label>
+                <label class="checkbox-container">Self-defence skills
+                    <input type="checkbox" value="self-defence">
+                    <span class="checkbox-checkmark"></span>
+                </label>
+                <label class="checkbox-container">Improved mental focus
+                    <input type="checkbox" value="mental-focus">
+                    <span class="checkbox-checkmark"></span>
+                </label>
+                <label class="checkbox-container">Improved self-discipline
+                    <input type="checkbox" value="self-discipline">
+                    <span class="checkbox-checkmark"></span>
+                </label>
+                <label class="checkbox-container">Stress relief
+                    <input type="checkbox" value="stress-relief">
+                    <span class="checkbox-checkmark"></span>
+                </label>
+                <label class="checkbox-container">Improved balance and coordination
+                    <input type="checkbox" value="balance-coordination">
+                    <span class="checkbox-checkmark"></span>
+                </label>
+                <label class="checkbox-container">Inscreased self confidence
+                    <input type="checkbox" value="self-confidence">
+                    <span class="checkbox-checkmark"></span>
+                </label>
+            </div>
+            <div class="form-div">
+                <label for="textarea" class="big-label">Any comments or suggestions?</label>
+                <textarea cols="30" rows="10" id="textarea" placeholder="Comment or suggestion..."></textarea>
+            </div>
+            <div class="form-div">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
